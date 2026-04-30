@@ -35,31 +35,41 @@ class Program
             Console.WriteLine("d1 and d2 are not equal");
         }
         */
-        Matrix m1 = new Matrix();
-        Matrix m2=new Matrix(); 
-        Matrix m3=new Matrix(); 
-        int i, j;   
-        for(i = 0;i<3;i++)
-        {
-            for (j=0;j<3;j++)  
-            {
-              Console.WriteLine($"enter element[{i},{j}] for m1:"); 
-              m1.a[i,j]=Convert.ToInt32(Console.ReadLine());
-            }
-        }
-        for (i = 0; i < 3; i++)
-        {
-            for (j = 0; j < 3; j++)
-            {
-                Console.WriteLine($"enter element[{i},{j}] for m2:");
-                m2.a[i, j] = Convert.ToInt32(Console.ReadLine());
-            }
-        }
-        m3=m1+m2;
-        Matrix m4=new Matrix();
-        m4 = m1 + m2 + m3;
+        //Matrix m1 = new Matrix();
+        //Matrix m2=new Matrix(); 
+        //Matrix m3=new Matrix(); 
+        //int i, j;   
+        //for(i = 0;i<3;i++)
+        //{
+        //    for (j=0;j<3;j++)  
+        //    {
+        //      Console.WriteLine($"enter element[{i},{j}] for m1:"); 
+        //      m1.a[i,j]=Convert.ToInt32(Console.ReadLine());
+        //    }
+        //}
+        //for (i = 0; i < 3; i++)
+        //{
+        //    for (j = 0; j < 3; j++)
+        //    {
+        //        Console.WriteLine($"enter element[{i},{j}] for m2:");
+        //        m2.a[i, j] = Convert.ToInt32(Console.ReadLine());
+        //    }
+        //}
+        //m3=m1+m2;
+        //Matrix m4=new Matrix();
+        //m4 = m1 + m2 + m3;
 
-        Console.WriteLine($"The sum of m1 and m2 is:\n{m3}");
+        //Console.WriteLine($"The sum of m1 and m2 is:\n{m3}");
+        Shape s1=new Shape();
+        s1.Area(5.3);
+        s1.Area(10);    
+        s1.Area(10,20);
+        // Connection of a function call with its body is called data binding.  
+        Box b1 = new Box(4, 3, 2);
+        int a=b1.Area();    
+        int v=b1.Volume();
+        Console.WriteLine($"The area of the box is {a} and the volume is {v}.");  
+
     }
 }
 
